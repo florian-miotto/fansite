@@ -1,0 +1,295 @@
+   
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap'); 
+html, body {
+	/* important for the full-width image to work */
+	height: 100%;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body {
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+	
+}
+
+a {
+	color:  black;
+	text-decoration: none;
+
+}
+a:hover{
+  color: burlywood;
+
+}
+   
+      
+/*  header  visible ----------------------------------*/
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        z-index: 50;
+      }
+      .flex-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: normal;
+        align-content: normal;
+        max-width: 70%;
+        margin-left: 5%;
+      }
+
+
+      /* Style the navigation links */
+      header a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 5%;
+        
+      }
+.logo{
+    margin-right: 5%;
+}
+      /* Style the main content area */
+      main {
+
+        margin-top: 60px; /* Leave space for the fixed header */
+     
+      }
+      main{
+        min-width: 1105px;
+      }
+
+
+
+/* main---------------------------------------------------------------- */
+.contain {
+
+    width: 100vw;
+    background-image: url(fondreverse.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.test{
+  width: 20%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.534);
+  top: 100px;
+  position: absolute;
+  left: 5%;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+  min-width: 180px;
+}
+.intro{
+  width: 90%;
+  height: 70%;
+  background-color: rgba(255, 255, 255, 0.534);
+  top: 90px;
+  position: absolute;
+  left: 4%;
+  padding: 3%;
+}
+.vid{
+  object-fit: cover; object-position: center; width: 100%; height: 100%; position: absolute; top: 0; left: 0;
+}
+
+.boxy{
+z-index: 50;
+padding-top: 5%;
+}
+.sec1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: normal;
+    align-content: normal;
+    min-width: 509px;
+    
+}
+.transclass{
+    border: 1px;
+    border-radius: 5px;
+    height:200px;
+    width: 20%;
+    min-width: 320px;
+    background-color:rgb(213, 213, 213);
+    margin: 3%;
+    }
+    
+    .transclass:hover{
+    height:250px;
+    background-color:rgb(86, 86, 86);
+    transition:height 0.5s ease 0s,background-color 1.5s ease 0s;
+    }
+.bigtext{
+    color: rgba(255, 255, 255, 0.881);
+   
+    position: relative;
+    left: 65%;
+    
+    font-size: 70px;
+    height: 100px;
+    top: 66px;
+}
+.jirotxt{
+  font-size: 25%;
+  background-color: rgba(64, 64, 64, 0.603);
+  padding: 10px;
+  width: 40%;
+}
+
+.slide-left {
+	-webkit-animation: slide-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+	        animation: slide-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-150px);
+              transform: translateX(-150px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-150px);
+              transform: translateX(-150px);
+    }
+  }
+  
+
+  .formuu{
+width: 80%;
+background-color: rgba(51, 51, 51, 0.545);
+padding: 1em;
+border-radius: 1em;
+display: flex;
+flex-direction: column;
+font-size: 25%;
+  }
+  /* --page contact ------------------------*/
+
+  .contBack{
+    width: 100vw;
+    background-image: url(jiro-by-sushi-stand.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+
+    
+   
+    min-height: 100vh;
+    background-size: cover;
+    
+  }
+/* --page jiro---------------------- */
+.part2{
+  width: 100%;
+  height: 250px;
+
+  background-color: rgba(210, 114, 30, 0.822);
+z-index: 50;
+}
+
+
+/* footer----------------------------------------------- */
+  .foo1{
+    background-color: #333;
+    width: 100%;
+    height: 20%;
+    display:flex ;
+    flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;     
+      align-items: flex-start;
+      align-content: flex-start;
+    
+    }
+    .foo-item{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+    
+    }
+.logo-footer{
+  max-height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+    .soc{
+      width: 30px;
+      height: 30px;
+      
+      
+    }
+    .linky>ul{
+      
+      list-style-type : none;
+      padding: 0.75rem 1rem;
+      color: #eee;
+      text-decoration: none;
+      
+    }
+    .linky a{
+      padding: 0.75rem 1rem;
+      color: #eee;
+      text-decoration: none;
+    
+    }
+    .linky a:hover{
+  color: burlywood;
+
+}
+    .logo-footer{
+      
+      height: 50px;
+      width: 300px;
+      position: relative;
+      margin: 2.75rem 1rem;
+    }
+    
+      .footy{
+        display:flex ;
+        justify-content: space-around;
+        color: #333;
+        align-items: baseline;
+        background-color: rgb(116, 116, 116);
+      }
+      .footy>a{
+         color: #000000; }
+    
